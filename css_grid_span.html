@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 2rem;
+        /* grid-template-columns: 300px 100px 100px; */
+        grid-template-columns: 3fr 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 2fr;
+    }
+    .class{
+        border: 5px solid black;
+        background-color: tomato;
+        padding: 1% 1%;
+    }
+    .class:first-child{
+        grid-column: 1 / span 2;
+        grid-row: 1 /span 4;
+        /* grid-column: 1/span 2;
+        grid-row: 2/span 3; */
+    }
+    .class:nth-child(7){
+        grid-column: 1/span 3;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="class">This is class 1</div>
+        <div class="class">This is class 2</div>
+        <div class="class">This is class 3</div>
+        <div class="class">This is class 4</div>
+        <div class="class">This is class 5</div>
+        <div class="class">This is class 6</div>
+        <div class="class">This is class 7</div>
+        <div class="class">This is class 8</div>
+        <div class="class">This is class 9</div>
+        <div class="class">This is class 10</div>
+        <div class="class">This is class 11</div>
+        <div class="class">This is class 12</div>
+        <div class="class">This is class 13</div>
+        <div class="class">This is class 14</div>
+        <div class="class">This is class 15</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #b7a9d1;
+    }
+    #nav{
+        margin-top: 30px;
+    }
+    #ngn{
+        height : 30px;
+        border-style: solid;
+        background-color: #a2aff3;
+        border-color: black;
+        border-radius: 30px;
+        padding-bottom: 10px;
+    }
+    #ngn ul{
+        list-style: none;
+        float: left;
+        margin: 10px 10px;
+    }
+    #ngn li{
+        float : left;
+        margin-left: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        text-decoration: none;
+        color: #fff6a5;
+    }
+    .search{
+        margin-left: 600px;
+        background-color: azure;
+        border-style: solid;
+        color: black;
+        border-radius: 10px;
+        width: 150px;
+        border-color: black;
+        padding-left: 30px;
+    }
+    a:hover{
+        color: rgb(0, 0, 0);
+    }
+    #search{
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        border-radius: 8px;
+        padding-left: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+    #nav::before{
+        content: "This is a before content";
+    };
+    body::after{
+        content: "This is a after content";
+    }
+    #list li:nth-child(even){
+        color: cyan;
+    }
+    #list li:nth-child(odd){
+        color: blueviolet;
+    }
+</style>
+<body>
+    <div id="nav">
+        <nav id="ngn">
+            <ul>
+                <li class="hov"><a href="#">Home</a></li>
+                <li class="hov"><a href="#">Services</a></li>
+                <li class="hov"><a href="#">About</a></li>
+                <li class="hov"><a href="#">Contact us</a></li>
+                <input type="text" id="search" placeholder="search" ></div></input>
+            </ul>
+        </nav>
+    </div>  
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>  
+</body>
+</html>

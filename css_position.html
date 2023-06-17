@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 4px solid black;
+        height: 500px;
+    }
+    .container2{
+        border: 4px solid black;
+        height: 3500px;
+    }
+    .box{
+        /* background-color: tomato; */
+        border: 3px solid black;
+        width: 250px;
+        height: 100px;
+        margin-left: 10px;
+        background-color: tomato;
+        display: inline-block;
+    }
+    #box1{
+        /* Relative is respective to its own position */
+        position:relative;
+        top: 25px;
+    }
+    #box2{
+        /* absolute is respective to its parent (here it is container) */
+        position: absolute;
+        left : 650px;
+    }
+    #box3{
+        /* fixed is respective to browser window */
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    #box4{
+        position:sticky;
+    }
+</style>
+<body>
+    <div class="container">
+        <p  id="box1" class="box">Box 1</p>
+        <p  id="box2" class="box">Box 2</p>
+        <p  id="box3" class="box">Box 3</p>
+    </div><br>
+    <div class= "container2">
+        <p  id="box4" class="box">Box 4</p>
+    </div>
+</body>
+</html>

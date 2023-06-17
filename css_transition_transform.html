@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: blueviolet;
+        border: 5px solid black;
+        /* height:550px;
+        width: 1000px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+    .box{
+        width:350px;
+        height:200px;
+        background-color: aqua;
+        border: 5px solid white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition-property: all;
+        transition-timing-function: ease-in;
+        transition-duration: 1s;
+    }
+    .box:hover{
+        background-color: rgb(157, 157, 190);
+        /* transform: scale(1.5); */
+        transform: skew(5deg);
+    }
+    .box1{
+        width:350px;
+        height:200px;
+        background-color: rgb(129, 196, 42);
+        border: 5px solid white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s ease-in-out;
+    }
+    .box1:hover{
+        background-color: rgb(218, 111, 111);
+        /* transform: rotate(360deg); */
+        transform: translate(-15px, -15px);
+        box-shadow: 15px 15px rgb(0, 0, 0);
+        
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>This is a box</p>
+        </div>
+        <div class="box1">
+            <p>This is a box</p>
+        </div>
+    </div>
+</body>
+</html>

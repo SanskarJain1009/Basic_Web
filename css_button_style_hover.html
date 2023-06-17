@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color:#addce9;
+    }
+    .container{
+        
+        width: 750px;
+        height: 280px;
+        margin: 100px auto 10px auto;
+        border-width: 5px;
+        border-color: #d6ff00;
+        border-style: solid;
+        background-color: #2892cb;
+
+    }
+    .box{
+        
+        width: 350px;
+        height: 200px;
+        border-radius: 30px;
+        background-color: rgb(229 117 124);
+        border-color: black;
+        border-style: solid;
+        padding : 15px 10px;
+        margin: 12px 10px;
+    }
+    .box:hover{
+        color:rgb(255, 239, 19);
+        background-color: rgb(56, 35, 77);
+        border-color: #89964a;
+    }
+    #first{
+        float: left;
+        margin-top: 20px;
+        text-align:center;
+    }
+    #second{
+        float: right;
+        margin-top:20px;
+        text-align:center;
+    }
+
+    #heading{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    p{
+        color: white;
+        font-size:large;
+        font-style: bold;
+    }
+    #heading:hover{
+        color: rgb(45, 226, 100)
+    }
+    .container:hover{
+        color:black;
+        background-color: #3d6f8a;
+    }
+        a{
+            width:100px;
+            height:30px;
+            margin: auto;
+            margin: 1px 25px 1px 750px;
+            border:none; 
+            color: rgb(114, 109, 79);
+        }
+        a:hover{
+            color:rgb(0, 0, 0);
+            border-style: solid;
+            background-color:rgb(243, 225, 209)
+                }
+                button{
+            width:100px;
+            height:30px;
+            border:none; 
+        }
+        a:active{
+            background-color:rgb(56, 35, 77);
+            color:rgb(243, 225, 209);
+            border-color:black;
+        }
+        a:visited{
+            background-color: #25239b;
+        }
+        button{
+            font-weight: bold;
+            cursor: pointer;
+            width:100px;
+            height:30px;
+            margin: auto;
+            border:none; 
+            color: rgb(114, 109, 79);
+        }
+
+        button:hover{
+            color:rgb(0, 0, 0);
+            border-style: solid;
+            background-color:rgb(243, 225, 209)
+        }
+        button:active{
+            background-color:rgb(56, 35, 77);
+            color:rgb(199, 100, 14);
+            border-color:rgb(255, 255, 255);
+        }
+    
+</style>
+<body><div class="container">
+    <P id="heading">Box heading.</P>
+            <p id="first" class="box">This is the first para.</p>
+            <p id="second" class="box">This is the first para.</p>
+        </div>
+        <div>   
+            <a href="www.facebook.com" class="btn">Click here</a>
+            <button class="btn">Click here</button>    
+        </div>
+             
+        </body>
+</html>

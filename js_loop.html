@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    for(let i=0;i<10;i++){
+        console.log(i);
+    }
+    let j=0;
+    while(j<10){
+        console.log(j);
+        j++;
+    }
+    let k=0;
+    do{
+        console.log(k);
+        k++;
+    }
+    while(k<10);
+
+    //for of loop
+    let friend=["Sanksar", "Sambhav", "Chutiya", "Viaj"];
+    for (elements of friend) {
+        console.log(elements);        
+    }
+
+    //for_each loop
+    friend.forEach(function f(element){
+        console.log(element);        
+    });
+
+
+    //for_in loop
+    let employee={
+        code: 1,
+        name: "Sanskar",
+        kaam : "Programmer",
+    }
+    for (Object in employee) {
+        console.log(`${Object} : ${employee[Object]}`);
+    }
+</script>
+<body>
+    
+</body>
+</html>
